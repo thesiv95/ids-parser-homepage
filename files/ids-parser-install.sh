@@ -18,9 +18,7 @@ sudo npm install nodemon -g
 sudo apt-get install nginx ufw -y
 sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 'Nginx HTTPS'
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu
-xenial/mongodb-org/4.0 multiverse" | sudo tee
-/etc/apt/sources.list.d/mongodb-org-4.0.list
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntuxenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
 sudo apt-get update
 sudo apt-get install mongodb-org -y --allow-unauthenticated
 echo "mongodb-org hold" | sudo dpkg --set-selections
